@@ -6,3 +6,6 @@
 
 # SASS
 .sass-cache
+
+# node
+node_modules

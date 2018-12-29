@@ -1,6 +1,6 @@
 {
-	"name": "pale-ghost",
-	"description": "A blank, dev ready, Ghost theme. :)",
+	"name": "pasty-ghost",
+	"description": "A foundational skeleton for building Ghost themes based on Nahuel Sanchez's pale-ghost starter theme.",
 	"version": "1.0.0",
 	"engines": {
 		"ghost": ">=1.2.0"
@@ -11,9 +11,16 @@
 		"mobile": "assets/screenshots/mobile.jpg"
 	},
 	"author": {
-		"name": "Nahuel Sanchez",
-		"email": "nahuel@nahuelsanchez.com",
-		"url": "https://www.nahuelsanchez.com/"
+		"name": "Jesse Barkdoll",
+		"email": "jessebarkdoll@gmail.com",
+		"url": "https://jessebarkdoll.com/"
+	},
+	"scripts": {
+		"build-task:scss-compile": "node-sass-chokidar assets/sass/ -o assets/css",
+		"build-task:autoprefixer": "postcss assets/css/*.css --use autoprefixer -d assets/css",
+		"sass:build": "npm-run-all -p build-task:*",
+		"sass:watch": "chokidar \"assets/sass/**/*.scss\" -c \"npm run sass:build\"",
+		"dev": "npm-run-all -p sass:*"
 	},
 	"gpm": {
 		"type": "theme",
@@ -32,11 +39,21 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nahuelsanchez/pale-ghost.git"
+		"url": "https://github.com/barkdoll/pasty-ghost.git"
 	},
-	"bugs": "https://github.com/nahuelsanchez/pale-ghost/issues",
-	"contributors": "https://github.com/nahuelsanchez/pale-ghost/graphs/contributors",
+	"bugs": "https://github.com/barkdoll/pasty-ghost/issues",
+	"contributors": "https://github.com/barkdoll/pasty-ghost/graphs/contributors",
 	"config": {
 		"posts_per_page": 5
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.4.3",
+		"chokidar-cli": "^1.2.1",
+		"node-sass": "^4.11.0",
+		"node-sass-chokidar": "^1.3.4",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^6.1.0"
+	},
+	"dependencies": {
 	}
 }
