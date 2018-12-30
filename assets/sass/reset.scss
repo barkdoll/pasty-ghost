@@ -1,68 +1,14 @@
-body
+* 
 {
-    margin: 0;
-    padding: 0;
-    
-    width: unset;
-    height: 100%;
-
-    // .main, .header 
-    // {
-    //     margin: 0;
-    //     padding: 0;
-    // }
+  margin: 0;
 }
 
-
-.wrapper 
+body 
 {
-    margin: 0 auto;
-    padding: 0;
+  margin: 0 auto;
+}
 
-    * {
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .header, .main, .footer
-    {
-        margin: 0;
-        padding: 0;
-        background: none;
-
-        > * {
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-    }
-
-    .main
-    {   
-        header, section, footer 
-        {
-            margin: 0;
-        }
-
-        .post
-        {
-            margin: 0;
-            padding: 0;
-
-            header, section, footer
-            {
-                margin: 0;
-                padding: 0;
-                background: none;
-
-                > * {
-                    margin: 0;
-                    padding: 0;
-                    background: none;
-                }
-            }
-            
-        }
-    }    
+img 
+{
+  max-width: 100%;
 }
