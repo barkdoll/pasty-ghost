@@ -1,19 +1,4 @@
-// Spacing, margins, padding
-$xs-rem: 0.35rem;
-$sm-rem: 0.75rem;
-$md-rem: 1.5rem;
-$lg-rem: 2rem;
-$xl-rem: 3rem;
-
-$sm-px: 10px;
-$md-px: 20px;
-$lg-px: 30px;
-$xl-px: 60px;
-
-$sm-vw: 1vw;
-$md-vw: 2vw;
-$lg-vw: 3vw;
-$xl-vw: 5vw;
+@import 'includes/variables';
 
 $content-max-width: 1100px;
 
@@ -40,11 +25,13 @@ $content-max-width: 1100px;
 
 .wrapper
 {
+    box-sizing: border-box;
+
     width: 100%;
     max-width: $content-max-width;
 
     margin: 0 auto;
-    padding: 0;
+    padding: $xl-px;
 
 
     .header, .main, .footer
@@ -62,8 +49,6 @@ $content-max-width: 1100px;
 
     .main
     {
-        padding: $xl-px;
-        
         // Where the post's body content lives
         .post
         {
@@ -130,15 +115,7 @@ $content-max-width: 1100px;
 {
     background-color: paleturquoise;
     margin: 0;
-    padding: $xl-rem 0;
-
-    > *
-    {
-        max-width: $content-max-width;
-        box-sizing: border-box;
-        margin: 0 auto;
-        padding: 0 $xl-px;
-    }
+    padding: 0;
 }
 
 .post-title
