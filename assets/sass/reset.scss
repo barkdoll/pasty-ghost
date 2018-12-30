@@ -6,11 +6,11 @@ body
     width: unset;
     height: 100%;
 
-    .main, .header 
-    {
-        margin: 0;
-        padding: 0;
-    }
+    // .main, .header 
+    // {
+    //     margin: 0;
+    //     padding: 0;
+    // }
 }
 
 
@@ -30,7 +30,7 @@ body
         padding: 0;
         background: none;
 
-        * {
+        > * {
             border: none;
             margin: 0;
             padding: 0;
