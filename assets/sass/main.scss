@@ -17,10 +17,11 @@ $content-max-width: 1100px;
     font: inherit;
 }
 
-.header 
-{
-    background: cornflowerblue; 
-}
+// .header 
+// {
+// 	// For easier visual context during development
+//     background-color: cornflowerblue; 
+// }
 
 
 .wrapper
@@ -112,9 +113,11 @@ $content-max-width: 1100px;
 
 .footer 
 {
-    background-color: paleturquoise;
-    margin: 0;
-    padding: 0;
+	// For easier visual context during development
+	// background-color: paleturquoise;
+	
+	margin: 0;
+	padding: 0;
 }
 
 .post-title
