@@ -1,5 +1,6 @@
-{{!--
-    This is the default layout, or base template which contains all the boring bits of HTML that have to appear on every page. Read more about it in https://themes.ghost.org/docs/templates
+{{!-- 
+    This is the default layout, or base template which contains all the boring bits of HTML that have to appear on every page. 
+    Read more about it in https://themes.ghost.org/docs/templates 
 --}}
 <!DOCTYPE html>
 <html lang="{{lang}}">
@@ -8,15 +9,20 @@
     <body class="{{body_class}}">
         {{> core/header}}
 
-        <div class="wrapper">
-            {{!-- All the main content gets inserted here, index.hbs, post.hbs, etcetera. --}}
-            <main class="main">
-                {{{body}}}
-            </main>
+        <div class="flow-box">
 
-        </div>
-        
-        {{> core/footer}}
+            <div class="wrapper">
+                {{!-- All the main content gets inserted here, index.hbs, post.hbs, etcetera. --}}
+                <main class="main">
+                    {{{body}}}
+                </main>
+            </div>
+
+            <div class="wrapper">
+                {{> core/footer}}
+            </div>
+
+        </div> <!-- .flow-box -->
 
         {{> core/foot}}
     </body>
