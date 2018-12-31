@@ -62,3 +62,7 @@ Now all that's left is building your theme, the fun part!
     ```
 
 1. Add your styles and build your theme. Good luck!
+
+## Credits
+
+Sass watcher npm scripts implemented courtesy of [@hellobrian](https://github.com/hellobrian)'s [node-sass recipe](https://github.com/hellobrian/sass-recipes/tree/master/node-sass#using-node-sass).
