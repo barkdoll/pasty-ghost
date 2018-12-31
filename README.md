@@ -2,7 +2,7 @@
 
 A blank, dev-ready [Ghost](https://ghost.org/) theme inspired by Nahuel Sanchez's [Pale Ghost](https://github.com/nahuelsanchez/pale-ghost) theme.
 
-Some npm tools have been added to development easier by utilizing Sass (actually SCSS, 'cause who uses regular Sass these days).
+Some npm tools have been added to make development easier by utilizing Sass (actually SCSS, 'cause who uses regular Sass these days).
 
 ## Getting Started
 
@@ -45,11 +45,18 @@ Now all that's left is building your theme, the fun part!
     npm run dev
     ```
 
-1. Open the theme directory in your IDE/text editor and create a new __*.scss__ file in the theme assets folder: `/pasty-ghost/assets/sass`
+1. Open the theme directory in your IDE/text editor
 
+1. Create a new __*.scss__ file in the theme assets directory:
+
+    The theme assets directory: `/pasty-ghost/assets/sass`
+    
     Example: `my-theme.scss`
 
-1. Add a link to a file with the same name and a `.css` extension instead of `.scss` it in the theme's head template file. You should add it after the last listed stylesheet link so that your styles are applied on top of the base styles. The head template file is: `/pasty-ghost/partials/core/head.hbs`
+1. Add a link to a file with the same name and a `.css` extension instead of `.scss` it in the theme's head template file. You should add it after the last listed stylesheet link so that your styles are applied on top of the base styles. 
+
+    The head template file: `/pasty-ghost/partials/core/head.hbs`
+
     ```html
     <link href="{{asset "css/mytheme.css"}}" rel="stylesheet" type="text/css" />
     ```
